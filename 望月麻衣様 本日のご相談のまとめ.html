@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>望月麻衣様　本日のご相談のまとめ（障害年金）</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&family=BIZ+UDPGothic:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#EDF2F1; --paper:#FFFFFF; --ink:#22302E; --sub:#5A6B68;
+  --teal:#2E6A64; --teal-soft:#D8E8E5; --amber:#B9781F; --amber-soft:#F6EAD6;
+  --rose:#B5545B; --rose-soft:#F5DFE0; --line:#CFDCD9; --skin:#F1CFB4; --hair:#4A3A33;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#16201F; --paper:#1F2B2A; --ink:#E4ECEA; --sub:#A3B4B1;
+    --teal:#7CC3BA; --teal-soft:#24403C; --amber:#E2A75A; --amber-soft:#3A2E1C;
+    --rose:#E08A90; --rose-soft:#3D2527; --line:#33443F; --skin:#D9B194; --hair:#2A201C;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#16201F; --paper:#1F2B2A; --ink:#E4ECEA; --sub:#A3B4B1;
+  --teal:#7CC3BA; --teal-soft:#24403C; --amber:#E2A75A; --amber-soft:#3A2E1C;
+  --rose:#E08A90; --rose-soft:#3D2527; --line:#33443F; --skin:#D9B194; --hair:#2A201C;
+}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*,*::before,*::after{box-sizing:inherit}
+body{margin:0;background:var(--bg);color:var(--ink);
+  font-family:"BIZ UDPGothic","Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;
+  font-size:16px;line-height:1.75;-webkit-text-size-adjust:100%}
+.wrap{max-width:640px;margin:0 auto;padding:24px 16px 56px}
+h1,h2,h3{font-family:"Zen Maru Gothic","BIZ UDPGothic",sans-serif;font-weight:700;line-height:1.4;margin:0}
+p{margin:0 0 8px}
+svg{display:block;max-width:100%;height:auto}
+svg text{font-family:"Zen Maru Gothic","BIZ UDPGothic",sans-serif}
+
+.f-teal{fill:var(--teal)} .f-tealsoft{fill:var(--teal-soft)} .f-amber{fill:var(--amber)} .f-ambersoft{fill:var(--amber-soft)}
+.f-rose{fill:var(--rose)} .f-rosesoft{fill:var(--rose-soft)} .f-paper{fill:var(--paper)} .f-ink{fill:var(--ink)} .f-sub{fill:var(--sub)}
+.f-skin{fill:var(--skin)} .f-hair{fill:var(--hair)} .f-line{fill:var(--line)}
+.s-teal{stroke:var(--teal)} .s-amber{stroke:var(--amber)} .s-line{stroke:var(--line)} .s-rose{stroke:var(--rose)} .s-sub{stroke:var(--sub)}
+
+/* ヘッダー */
+header{text-align:center;padding:4px 0 0}
+.office{font-size:.8rem;color:var(--sub)}
+h1{font-size:1.45rem;margin:6px 0 2px}
+.date{font-size:.82rem;color:var(--sub)}
+.hero-ill{max-width:300px;margin:10px auto 0}
+
+section{background:var(--paper);border-radius:20px;padding:22px 18px;margin-top:18px}
+h2{font-size:1.15rem;color:var(--teal);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+h2 .ic{flex:none;width:36px;height:36px;border-radius:50%;background:var(--teal-soft);display:grid;place-items:center;font-size:1.15rem}
+.small{font-size:.86rem;color:var(--sub)}
+.center{text-align:center}
+
+/* 期限 */
+.deadline{background:var(--amber-soft);border:2px solid var(--amber);border-radius:20px;padding:18px;margin-top:18px;display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center}
+.deadline .big{font-family:"Zen Maru Gothic",sans-serif;font-size:1.7rem;font-weight:700;color:var(--amber);line-height:1.2}
+.deadline p{margin:4px 0 0;font-size:.92rem}
+
+/* タイムライン */
+.tl{list-style:none;margin:0;padding:0;position:relative}
+.tl::before{content:"";position:absolute;left:23px;top:24px;bottom:24px;width:3px;background:var(--line);border-radius:2px}
+.tl li{display:grid;grid-template-columns:48px 1fr;gap:12px;align-items:center;margin-bottom:12px;position:relative}
+.tl .dot{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;font-size:1.35rem;background:var(--teal-soft);border:3px solid var(--paper)}
+.tl .now .dot{background:var(--paper);border-color:var(--teal)}
+.tl .key .dot{background:var(--amber);border-color:var(--amber-soft)}
+.tl b{display:block;font-size:.95rem}
+.tl span{font-size:.88rem;color:var(--sub)}
+.tl .key b{color:var(--amber)}
+.today{display:inline-block;font-size:.72rem;background:var(--teal);color:var(--paper);border-radius:99px;padding:0 8px;margin-left:6px;vertical-align:2px}
+
+/* 3要件 */
+.reqs{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}
+.reqs .r{border-radius:16px;padding:12px 4px;background:var(--teal-soft)}
+.reqs .r.wait{background:var(--amber-soft)}
+.reqs .mark{font-size:1.9rem;line-height:1.1}
+.reqs b{display:block;font-size:.88rem;margin-top:4px}
+.reqs span{font-size:.78rem;color:var(--sub)}
+
+/* 比較カード */
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.vs > div{border-radius:16px;padding:14px 10px;text-align:center}
+.vs .no{background:var(--rose-soft)} .vs .yes{background:var(--teal-soft)}
+.vs .sym{font-size:2rem;font-weight:700;line-height:1}
+.vs .no .sym{color:var(--rose)} .vs .yes .sym{color:var(--teal)}
+.chip{display:inline-block;border-radius:99px;padding:2px 10px;margin:3px 2px;font-size:.85rem;background:var(--paper)}
+.vs p{font-size:.82rem;margin:8px 0 0;color:var(--sub)}
+
+/* 吹き出し */
+.bubble{background:var(--teal-soft);border-radius:18px;padding:14px 16px;position:relative;margin:4px 0 14px;font-size:.95rem}
+.bubble::after{content:"";position:absolute;left:38px;bottom:-12px;border:12px solid transparent;border-top-color:var(--teal-soft);border-bottom:0}
+
+.tips{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center}
+.tips div{background:var(--bg);border-radius:14px;padding:10px 4px;font-size:.8rem;line-height:1.5}
+.tips .e{font-size:1.6rem;display:block;margin-bottom:2px}
+
+/* 普段の様子 */
+.life{display:grid;grid-template-columns:repeat(2,1fr);gap:8px}
+.life div{display:grid;grid-template-columns:40px 1fr;gap:8px;align-items:center;background:var(--bg);border-radius:14px;padding:10px}
+.life .e{font-size:1.6rem;text-align:center}
+.life b{display:block;font-size:.85rem}
+.life span{font-size:.8rem;color:var(--sub);line-height:1.45;display:block}
+@media (max-width:380px){.life{grid-template-columns:1fr}}
+
+/* 支援メーター */
+.meter{margin-top:14px}
+.meter .row{display:grid;grid-template-columns:72px 1fr;gap:8px;align-items:center;font-size:.82rem;margin:6px 0}
+.bar{height:14px;border-radius:99px;background:var(--line);overflow:hidden;display:flex}
+.bar i{display:block;height:100%}
+.bar .me{background:var(--teal)} .bar .help{background:var(--amber)}
+.legend{display:flex;gap:14px;justify-content:center;font-size:.78rem;color:var(--sub);margin-top:6px}
+.legend i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:4px;vertical-align:-1px}
+
+/* 失業手当 */
+.points{display:grid;gap:10px}
+.points div{display:grid;grid-template-columns:52px 1fr;gap:10px;align-items:center}
+.points .e{width:52px;height:52px;border-radius:16px;background:var(--amber-soft);display:grid;place-items:center;font-size:1.6rem}
+.points b{display:block;font-size:.92rem}
+.points span{font-size:.84rem;color:var(--sub)}
+.memo{margin-top:14px;border:2px dashed var(--amber);border-radius:14px;padding:10px 12px;font-size:.88rem}
+
+/* 費用 */
+.fees{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;align-items:center;gap:4px;text-align:center}
+.fees .fb{border-radius:14px;background:var(--bg);padding:10px 4px}
+.fees .fb .e{font-size:1.5rem;display:block}
+.fees .fb b{display:block;font-size:.95rem;color:var(--teal)}
+.fees .fb span{font-size:.72rem;color:var(--sub);line-height:1.4;display:block}
+.fees .ar{color:var(--sub);font-size:1.1rem}
+
+/* 流れ */
+.steps{list-style:none;margin:0;padding:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:44px 1fr;gap:12px;align-items:center;margin-bottom:10px;counter-increment:s}
+.steps .n{width:44px;height:44px;border-radius:50%;background:var(--teal);color:var(--paper);display:grid;place-items:center;font-family:"Zen Maru Gothic",sans-serif;font-weight:700;font-size:1.1rem}
+.steps .n::before{content:counter(s)}
+.steps li:last-child .n{background:var(--amber)}
+.steps span{font-size:.94rem}
+
+footer{margin-top:24px;font-size:.86rem;color:var(--sub);text-align:center;line-height:1.7}
+footer b{color:var(--ink)}
+a{color:var(--teal)}
+a:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <div class="office">静岡障害年金サポートきぼう</div>
+  <h1>望月麻衣様<br>本日のご相談のまとめ</h1>
+  <div class="date">令和8年10月2日</div>
+  <!-- ヒーローイラスト：芽と、ささえる手 -->
+  <svg class="hero-ill" viewBox="0 0 300 150" role="img" aria-label="鉢植えの芽を両手でささえるイラスト">
+    <ellipse cx="150" cy="138" rx="120" ry="8" class="f-tealsoft"/>
+    <path d="M60 120 C70 100,110 98,122 112 L130 124 L70 130 Z" class="f-skin"/>
+    <path d="M240 120 C230 100,190 98,178 112 L170 124 L230 130 Z" class="f-skin"/>
+    <path d="M118 98 h64 l-8 38 h-48 z" class="f-amber"/>
+    <rect x="112" y="92" width="76" height="12" rx="6" class="f-amber"/>
+    <path d="M150 92 C150 70,150 58,150 46" class="s-teal" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M150 64 C130 62,118 48,120 34 C136 34,150 46,150 64 Z" class="f-teal"/>
+    <path d="M150 54 C168 52,182 38,180 22 C162 22,150 36,150 54 Z" class="f-teal"/>
+    <circle cx="70" cy="40" r="4" class="f-amber"/><circle cx="232" cy="52" r="5" class="f-tealsoft"/><circle cx="214" cy="26" r="3" class="f-amber"/>
+  </svg>
+  <p class="small" style="margin-top:6px">お話しした内容を、絵と図でまとめました。</p>
+</header>
+
+<!-- 期限 -->
+<div class="deadline" role="note">
+  <svg viewBox="0 0 96 100" aria-hidden="true">
+    <rect x="6" y="14" width="84" height="80" rx="12" class="f-paper s-amber" stroke-width="3"/>
+    <rect x="6" y="14" width="84" height="24" rx="12" class="f-amber"/>
+    <rect x="6" y="28" width="84" height="10" class="f-amber"/>
+    <rect x="24" y="4" width="8" height="20" rx="4" class="f-ink"/><rect x="64" y="4" width="8" height="20" rx="4" class="f-ink"/>
+    <text x="48" y="33" text-anchor="middle" font-size="13" font-weight="700" class="f-paper">11月</text>
+    <text x="48" y="80" text-anchor="middle" font-size="36" font-weight="700" class="f-amber">20</text>
+  </svg>
+  <div>
+    <div class="big">11月20日まで</div>
+    <p>この日までの受診で書いてもらう診断書があれば、<b>8月までさかのぼって</b>請求できます。</p>
+  </div>
+</div>
+
+<!-- タイムライン -->
+<section>
+  <h2><span class="ic">🗓️</span>大切な日付</h2>
+  <ul class="tl">
+    <li><div class="dot">🏥</div><div><b>令和7年2月21日</b><span>寸府病院を初めて受診（初診日）</span></div></li>
+    <li><div class="dot">🚩</div><div><b>令和8年8月21日</b><span>障害認定日（初診から1年6か月）</span></div></li>
+    <li><div class="dot">🏢</div><div><b>令和8年8月27日</b><span>退職</span></div></li>
+    <li class="now"><div class="dot">💬</div><div><b>令和8年10月5日<span class="today">次の予定</span></b><span>ご主人と一緒に受診</span></div></li>
+    <li class="key"><div class="dot">⭐</div><div><b>令和8年11月20日</b><span>さかのぼり請求の受診・診断書の期限</span></div></li>
+  </ul>
+</section>
+
+<!-- 見通し -->
+<section>
+  <h2><span class="ic">🔎</span>受け取れる見通し</h2>
+  <div class="reqs">
+    <div class="r"><div class="mark">✅</div><b>初診日</b><span>厚生年金に<br>加入中</span></div>
+    <div class="r"><div class="mark">✅</div><b>保険料</b><span>20歳から<br>ずっと加入</span></div>
+    <div class="r wait"><div class="mark">⏳</div><b>障害の状態</b><span>診断書<br>しだい</span></div>
+  </div>
+
+  <!-- 等級ゲージ -->
+  <svg viewBox="0 0 340 110" style="margin-top:16px" role="img" aria-label="等級の目安。2級の可能性があります">
+    <text x="170" y="16" text-anchor="middle" font-size="13" class="f-sub">今の生活のご様子から見た目安</text>
+    <rect x="10" y="44" width="106" height="26" rx="13" class="f-tealsoft"/>
+    <rect x="117" y="44" width="106" height="26" class="f-teal"/>
+    <rect x="224" y="44" width="106" height="26" rx="13" class="f-tealsoft"/>
+    <rect x="200" y="44" width="30" height="26" class="f-tealsoft"/>
+    <rect x="110" y="44" width="10" height="26" class="f-tealsoft"/>
+    <rect x="117" y="44" width="106" height="26" class="f-teal"/>
+    <text x="63" y="62" text-anchor="middle" font-size="13" class="f-ink">3級</text>
+    <text x="170" y="62" text-anchor="middle" font-size="14" font-weight="700" class="f-paper">2級</text>
+    <text x="277" y="62" text-anchor="middle" font-size="13" class="f-ink">1級</text>
+    <path d="M170 40 l-9 -12 h18 z" class="f-amber"/>
+    <text x="170" y="88" text-anchor="middle" font-size="12" class="f-sub">日常生活に</text>
+    <text x="170" y="104" text-anchor="middle" font-size="12" class="f-sub">著しい支障がある状態</text>
+    <text x="63" y="92" text-anchor="middle" font-size="12" class="f-sub">働くことに制限</text>
+    <text x="277" y="92" text-anchor="middle" font-size="12" class="f-sub">ほぼ寝たきり など</text>
+  </svg>
+  <p class="small center" style="margin-top:8px">「動ける日がある」だけでは軽く見られません。<br>いつもできるわけでなければ、支障がある状態です。</p>
+</section>
+
+<!-- 診断名 -->
+<section>
+  <h2><span class="ic">🩺</span>診断名のポイント</h2>
+  <div class="vs">
+    <div class="no">
+      <div class="sym">✕</div>
+      <div style="margin-top:8px"><span class="chip">強迫性障害</span><br>だけ</div>
+      <p>原則として<br>対象外</p>
+    </div>
+    <div class="yes">
+      <div class="sym">○</div>
+      <div style="margin-top:8px"><span class="chip">強迫性障害</span><br>＋<br><span class="chip">うつ病・うつ状態</span></div>
+      <p>審査の<br>対象になる</p>
+    </div>
+  </div>
+  <p class="small center" style="margin-top:12px">申請できるかを決めるのは、医師ではなく日本年金機構です。<br><b style="color:var(--ink)">診断書に「うつ」を書いてもらうことが鍵です。</b></p>
+</section>
+
+<!-- 10月5日 -->
+<section>
+  <h2><span class="ic">💬</span>10月5日に伝えること</h2>
+  <div class="bubble">「社労士に相談して、障害年金の手続きを進めることになりました。薬は家族も協力して、きちんと飲めるようにします。診断書をお願いできますか。」</div>
+  <!-- 診察室のイラスト -->
+  <svg viewBox="0 0 340 130" role="img" aria-label="ご主人と一緒に先生に相談しているイラスト">
+    <rect x="0" y="112" width="340" height="10" rx="5" class="f-tealsoft"/>
+    <!-- 望月様 -->
+    <circle cx="70" cy="44" r="20" class="f-skin"/>
+    <path d="M50 44 C48 18,92 18,90 44 C90 34,72 30,60 34 C54 36,52 40,50 44 Z" class="f-hair"/>
+    <path d="M50 46 C48 60,52 70,56 74" class="s-sub" stroke-width="0" fill="none"/>
+    <path d="M44 112 C44 80,96 80,96 112 Z" class="f-rose"/>
+    <!-- ご主人 -->
+    <circle cx="128" cy="40" r="20" class="f-skin"/>
+    <path d="M108 38 C108 18,148 18,148 38 C140 30,118 30,108 38 Z" class="f-hair"/>
+    <path d="M100 112 C100 76,156 76,156 112 Z" class="f-teal"/>
+    <!-- 机 -->
+    <rect x="170" y="80" width="70" height="8" rx="4" class="f-amber"/>
+    <rect x="200" y="88" width="10" height="24" class="f-amber"/>
+    <rect x="186" y="66" width="34" height="14" rx="3" class="f-paper s-line" stroke-width="2"/>
+    <!-- 先生 -->
+    <circle cx="280" cy="42" r="20" class="f-skin"/>
+    <path d="M260 40 C260 20,300 20,300 40 C292 32,270 32,260 40 Z" class="f-sub"/>
+    <path d="M250 112 C250 76,310 76,310 112 Z" class="f-paper s-line" stroke-width="3"/>
+    <path d="M280 80 v32" class="s-line" stroke-width="2"/>
+    <circle cx="292" cy="96" r="4" class="f-teal"/>
+    <!-- 吹き出しマーク -->
+    <path d="M150 12 h40 a8 8 0 0 1 8 8 v12 a8 8 0 0 1 -8 8 h-24 l-10 8 v-8 h-6 a8 8 0 0 1 -8 -8 v-12 a8 8 0 0 1 8 -8 z" class="f-tealsoft"/>
+    <circle cx="160" cy="26" r="3" class="f-teal"/><circle cx="170" cy="26" r="3" class="f-teal"/><circle cx="180" cy="26" r="3" class="f-teal"/>
+  </svg>
+  <div class="tips" style="margin-top:12px">
+    <div><span class="e">😣</span>いちばん<br>つらい日を<br>伝える</div>
+    <div><span class="e">📝</span>話しにくい<br>ことは<br>メモで渡す</div>
+    <div><span class="e">📱</span>結果を<br>LINEで<br>お知らせ</div>
+  </div>
+</section>
+
+<!-- 2つの道筋 -->
+<section>
+  <h2><span class="ic">🧭</span>診断書までの2つの道</h2>
+  <svg viewBox="0 0 340 300" role="img" aria-label="10月5日の受診で書いてもらえれば今の病院で診断書。断られたら11月20日までに最初の先生のクリニックへ転院して診断書">
+    <defs>
+      <marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 L10 5 L0 10 z" class="f-sub"/></marker>
+    </defs>
+    <rect x="95" y="6" width="150" height="46" rx="23" class="f-teal"/>
+    <text x="170" y="27" text-anchor="middle" font-size="14" font-weight="700" class="f-paper">10月5日</text>
+    <text x="170" y="44" text-anchor="middle" font-size="12" class="f-paper">今の先生に相談</text>
+    <path d="M140 52 C110 72,90 78,85 96" class="s-sub" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+    <path d="M200 52 C230 72,250 78,255 96" class="s-sub" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+    <text x="78" y="72" text-anchor="middle" font-size="12" class="f-teal" font-weight="700">書いてもらえる</text>
+    <text x="268" y="72" text-anchor="middle" font-size="12" class="f-rose" font-weight="700">断られた</text>
+
+    <rect x="12" y="100" width="146" height="72" rx="16" class="f-tealsoft"/>
+    <text x="85" y="128" text-anchor="middle" font-size="22">🏥</text>
+    <text x="85" y="150" text-anchor="middle" font-size="13" font-weight="700" class="f-ink">今の病院のまま</text>
+    <text x="85" y="165" text-anchor="middle" font-size="11" class="f-sub">いちばんスムーズ</text>
+
+    <rect x="182" y="100" width="146" height="72" rx="16" class="f-ambersoft"/>
+    <text x="255" y="128" text-anchor="middle" font-size="22">🚶‍♀️</text>
+    <text x="255" y="150" text-anchor="middle" font-size="13" font-weight="700" class="f-ink">最初の先生の</text>
+    <text x="255" y="165" text-anchor="middle" font-size="13" font-weight="700" class="f-ink">クリニックへ転院</text>
+
+    <path d="M255 172 v28" class="s-sub" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+    <rect x="182" y="204" width="146" height="40" rx="12" class="f-paper s-amber" stroke-width="2"/>
+    <text x="255" y="222" text-anchor="middle" font-size="12" font-weight="700" class="f-amber">11月20日までに</text>
+    <text x="255" y="237" text-anchor="middle" font-size="12" class="f-ink">転院先で受診</text>
+
+    <path d="M85 172 C85 230,120 262,140 266" class="s-sub" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+    <path d="M255 244 C255 262,220 266,200 266" class="s-sub" stroke-width="2" fill="none" marker-end="url(#ar)"/>
+    <rect x="130" y="250" width="80" height="36" rx="18" class="f-teal"/>
+    <text x="170" y="273" text-anchor="middle" font-size="13" font-weight="700" class="f-paper">📄 診断書</text>
+  </svg>
+  <p class="small center">転院の手続きは、こちらでもお手伝いします。</p>
+</section>
+
+<!-- 普段のご様子 -->
+<section>
+  <h2><span class="ic">🏠</span>伺った普段のご様子</h2>
+  <p class="small">先生に渡すメモの参考にどうぞ。</p>
+  <div class="life">
+    <div><span class="e">🍙</span><span><b>食事</b><span>1日1食。母・夫が用意</span></span></div>
+    <div><span class="e">🧺</span><span><b>家事</b><span>掃除・洗濯は母に頼っている</span></span></div>
+    <div><span class="e">🚪</span><span><b>外出</b><span>できる日とできない日がある。通院は付き添い</span></span></div>
+    <div><span class="e">💊</span><span><b>服薬</b><span>飲み忘れ・抵抗感があり、つらい時だけ飲む</span></span></div>
+    <div><span class="e">💴</span><span><b>お金</b><span>支払いに行けず滞納。夫・母に頼る</span></span></div>
+    <div><span class="e">📞</span><span><b>人との関わり</b><span>1対1ならできるが大勢は難しい</span></span></div>
+    <div><span class="e">🚨</span><span><b>非常時</b><span>逃げられても持ち出しの準備は難しい</span></span></div>
+    <div><span class="e">🫧</span><span><b>潔癖・強迫</b><span>何度も入浴、洗濯しすぎ、廊下で食事</span></span></div>
+  </div>
+  <div class="meter" role="img" aria-label="食事、家事、お金の管理は家族の手助けが大きい状態">
+    <p class="small center" style="margin-bottom:4px">ご自身でできることと、家族の手助け（イメージ）</p>
+    <div class="row"><span>食事</span><div class="bar"><i class="me" style="width:25%"></i><i class="help" style="width:75%"></i></div></div>
+    <div class="row"><span>家事</span><div class="bar"><i class="me" style="width:15%"></i><i class="help" style="width:85%"></i></div></div>
+    <div class="row"><span>お金の管理</span><div class="bar"><i class="me" style="width:25%"></i><i class="help" style="width:75%"></i></div></div>
+    <div class="row"><span>通院</span><div class="bar"><i class="me" style="width:50%"></i><i class="help" style="width:50%"></i></div></div>
+    <div class="legend"><span><i style="background:var(--teal)"></i>ご自身</span><span><i style="background:var(--amber)"></i>家族の手助け</span></div>
+  </div>
+</section>
+
+<!-- 失業手当（訂正） -->
+<section>
+  <h2><span class="ic">🙇</span>失業手当についての訂正とお詫び</h2>
+  <div class="memo" style="margin-top:0;border-style:solid">ご相談の際に「障害者手帳があれば失業手当を受け取れる可能性がある」とご案内しましたが、正しくありませんでした。あらためて厳密に計算したところ、<b>失業手当は受け取れない</b>という結果になりました。期待をおもちいただいたのに、申し訳ありません。</div>
+
+  <svg viewBox="0 0 340 150" style="margin-top:16px" role="img" aria-label="さかのぼれるのは最長4年まで。入社後の勤務期間は4年より前になるため数えられず、数えられる勤務は復職後の2〜3か月で、必要な6か月に届きません">
+    <text x="170" y="16" text-anchor="middle" font-size="13" class="f-sub">退職日から、さかのぼって数えられるのは最長4年</text>
+    <rect x="70" y="30" width="262" height="10" rx="5" class="f-tealsoft"/>
+    <text x="201" y="56" text-anchor="middle" font-size="11" class="f-teal">さかのぼれる範囲（令和4年8月末〜令和8年8月）</text>
+    <rect x="8" y="68" width="52" height="28" rx="6" class="f-line"/>
+    <text x="34" y="86" text-anchor="middle" font-size="11" class="f-ink">入社後</text>
+    <rect x="66" y="68" width="150" height="28" rx="6" class="f-ambersoft"/>
+    <text x="141" y="86" text-anchor="middle" font-size="11" class="f-ink">休業・育児休業</text>
+    <rect x="222" y="68" width="30" height="28" rx="6" class="f-teal"/>
+    <text x="237" y="86" text-anchor="middle" font-size="11" class="f-paper">勤務</text>
+    <rect x="258" y="68" width="74" height="28" rx="6" class="f-ambersoft"/>
+    <text x="295" y="86" text-anchor="middle" font-size="11" class="f-ink">傷病で休職</text>
+    <text x="34" y="114" text-anchor="middle" font-size="11" class="f-rose">範囲の外</text>
+    <text x="237" y="114" text-anchor="middle" font-size="11" class="f-teal">2〜3か月</text>
+    <text x="170" y="140" text-anchor="middle" font-size="13" font-weight="700" class="f-ink">必要な6か月に届きません</text>
+  </svg>
+
+  <div class="points" style="margin-top:14px">
+    <div><span class="e">🪪</span><span><b>障害者手帳があっても条件は同じ</b><span>手帳で変わるのは受け取れる日数で、受け取れるかどうかの条件は変わりません</span></span></div>
+    <div><span class="e">🌱</span><span><b>障害年金には影響ありません</b><span>障害年金の見通しや手続きは、これまでどおり進められます</span></span></div>
+  </div>
+  <p class="small center" style="margin-top:12px">ハローワークへ行き直していただく必要はありません。</p>
+</section>
+
+<!-- 費用 -->
+<section>
+  <h2><span class="ic">💰</span>費用</h2>
+  <div class="fees">
+    <div class="fb"><span class="e">🗣️</span><b>無料</b><span>本日の<br>ご相談</span></div>
+    <div class="ar">›</div>
+    <div class="fb"><span class="e">✍️</span><b>22,000円</b><span>ご依頼時<br>（税込）</span></div>
+    <div class="ar">›</div>
+    <div class="fb"><span class="e">🎉</span><b>2か月分</b><span>受給決定時<br>の成功報酬</span></div>
+  </div>
+  <p class="small" style="margin-top:12px">成功報酬：年金額の2か月分。さかのぼって受け取る分がある場合はその15%。最低報酬は10万円です。診断書の作成料などの実費は別途かかります。</p>
+</section>
+
+<!-- これからの流れ -->
+<section>
+  <h2><span class="ic">👣</span>これからの流れ</h2>
+  <ol class="steps">
+    <li><div class="n"></div><span>10月5日、ご主人と受診して診断書を相談</span></li>
+    <li><div class="n"></div><span>先生のお返事をLINEでお知らせ</span></li>
+    <li><div class="n"></div><span>今の病院か転院か、一緒に決める</span></li>
+    <li><div class="n"></div><span>11月20日までに受診を済ませる</span></li>
+  </ol>
+</section>
+
+<footer>
+  <b>静岡障害年金サポートきぼう</b><br>
+  社会保険労務士法人キャリアデザイン<br>
+  社会保険労務士　杉山 史和<br>
+  電話　<a href="tel:0559609323">055-960-9323</a>　／　LINEでもどうぞ
+</footer>
+
+</div>
+</body>
+</html>
